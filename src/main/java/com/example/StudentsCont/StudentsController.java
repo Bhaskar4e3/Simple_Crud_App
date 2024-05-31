@@ -46,6 +46,7 @@ public class StudentsController {
 		sts.add(new StudentsEntity(3, "ram", "pvkk", "ECE", "1234509876", "india"));
 		sts.add(new StudentsEntity(4, "shyam", "alts", "ME", "5432167890", "india"));
 		for(StudentsEntity st:sts) {
+                System.out.println("in post construct records are saving when application started");
 			logger.info("in post construct for each method started");
 			 seviceInt.save(st);
 		}
